@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78020E7E2937EF0C0003EA75 /* saverView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 783AE9ED2936DEB10055463B /* saverView.mm */; };
+		78020EA9293970C90003EA75 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78020EA8293970C90003EA75 /* ScreenSaver.framework */; };
+		78020EAB293ACCB40003EA75 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78020EAA293ACCB40003EA75 /* Cocoa.framework */; };
+		78020EAD293ACCBF0003EA75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78020EAC293ACCBF0003EA75 /* CoreGraphics.framework */; };
+		78020EAF293ACD200003EA75 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78020EAE293ACD200003EA75 /* QuartzCore.framework */; };
+		78020EBA293AE15B0003EA75 /* field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78020EB8293AE15B0003EA75 /* field.cpp */; };
+		78020EBB293AE15B0003EA75 /* field.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 78020EB9293AE15B0003EA75 /* field.hpp */; };
+		78020EBF293B83680003EA75 /* canvas.mm in Sources */ = {isa = PBXBuildFile; fileRef = 78020EBD293B83680003EA75 /* canvas.mm */; };
+		78020EC0293B83680003EA75 /* canvas.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 78020EBE293B83680003EA75 /* canvas.hpp */; };
+		783AE9EC2936DEB10055463B /* saverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 783AE9EB2936DEB10055463B /* saverView.h */; };
+		78D2336F293BA3C10048AD9B /* morpher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78D2336D293BA3C10048AD9B /* morpher.cpp */; };
+		78D23370293BA3C10048AD9B /* morpher.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 78D2336E293BA3C10048AD9B /* morpher.hpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		78020EA8293970C90003EA75 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		78020EAA293ACCB40003EA75 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		78020EAC293ACCBF0003EA75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		78020EAE293ACD200003EA75 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		78020EB8293AE15B0003EA75 /* field.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = field.cpp; sourceTree = "<group>"; };
+		78020EB9293AE15B0003EA75 /* field.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = field.hpp; sourceTree = "<group>"; };
+		78020EBD293B83680003EA75 /* canvas.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = canvas.mm; sourceTree = "<group>"; };
+		78020EBE293B83680003EA75 /* canvas.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = canvas.hpp; sourceTree = "<group>"; };
+		783AE9E82936DEB10055463B /* saver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = saver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		783AE9EB2936DEB10055463B /* saverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = saverView.h; sourceTree = "<group>"; };
+		783AE9ED2936DEB10055463B /* saverView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = saverView.mm; path = /Users/igor/Desktop/projects/saver/saver/saver/saverView.mm; sourceTree = "<absolute>"; };
+		78D2336D293BA3C10048AD9B /* morpher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = morpher.cpp; sourceTree = "<group>"; };
+		78D2336E293BA3C10048AD9B /* morpher.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = morpher.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		783AE9E52936DEB10055463B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78020EAF293ACD200003EA75 /* QuartzCore.framework in Frameworks */,
+				78020EAD293ACCBF0003EA75 /* CoreGraphics.framework in Frameworks */,
+				78020EAB293ACCB40003EA75 /* Cocoa.framework in Frameworks */,
+				78020EA9293970C90003EA75 /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78020EA7293970C90003EA75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78020EAE293ACD200003EA75 /* QuartzCore.framework */,
+				78020EAC293ACCBF0003EA75 /* CoreGraphics.framework */,
+				78020EAA293ACCB40003EA75 /* Cocoa.framework */,
+				78020EA8293970C90003EA75 /* ScreenSaver.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78020EB7293AE1350003EA75 /* field */ = {
+			isa = PBXGroup;
+			children = (
+				78020EB8293AE15B0003EA75 /* field.cpp */,
+				78020EB9293AE15B0003EA75 /* field.hpp */,
+			);
+			path = field;
+			sourceTree = "<group>";
+		};
+		78020EBC293B834A0003EA75 /* canvas */ = {
+			isa = PBXGroup;
+			children = (
+				78020EBD293B83680003EA75 /* canvas.mm */,
+				78020EBE293B83680003EA75 /* canvas.hpp */,
+			);
+			path = canvas;
+			sourceTree = "<group>";
+		};
+		783AE9DE2936DEB10055463B = {
+			isa = PBXGroup;
+			children = (
+				783AE9EA2936DEB10055463B /* saver */,
+				783AE9E92936DEB10055463B /* Products */,
+				78020EA7293970C90003EA75 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		783AE9E92936DEB10055463B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				783AE9E82936DEB10055463B /* saver.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		783AE9EA2936DEB10055463B /* saver */ = {
+			isa = PBXGroup;
+			children = (
+				78D2336C293BA3AA0048AD9B /* morpher */,
+				78020EBC293B834A0003EA75 /* canvas */,
+				78020EB7293AE1350003EA75 /* field */,
+				783AE9EB2936DEB10055463B /* saverView.h */,
+				783AE9ED2936DEB10055463B /* saverView.mm */,
+			);
+			path = saver;
+			sourceTree = "<group>";
+		};
+		78D2336C293BA3AA0048AD9B /* morpher */ = {
+			isa = PBXGroup;
+			children = (
+				78D2336D293BA3C10048AD9B /* morpher.cpp */,
+				78D2336E293BA3C10048AD9B /* morpher.hpp */,
+			);
+			path = morpher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		783AE9E32936DEB10055463B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783AE9EC2936DEB10055463B /* saverView.h in Headers */,
+				78020EBB293AE15B0003EA75 /* field.hpp in Headers */,
+				78D23370293BA3C10048AD9B /* morpher.hpp in Headers */,
+				78020EC0293B83680003EA75 /* canvas.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		783AE9E72936DEB10055463B /* saver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783AE9F12936DEB10055463B /* Build configuration list for PBXNativeTarget "saver" */;
+			buildPhases = (
+				783AE9E32936DEB10055463B /* Headers */,
+				783AE9E42936DEB10055463B /* Sources */,
+				783AE9E52936DEB10055463B /* Frameworks */,
+				783AE9E62936DEB10055463B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = saver;
+			productName = saver;
+			productReference = 783AE9E82936DEB10055463B /* saver.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		783AE9DF2936DEB10055463B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					783AE9E72936DEB10055463B = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 783AE9E22936DEB10055463B /* Build configuration list for PBXProject "saver" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 783AE9DE2936DEB10055463B;
+			productRefGroup = 783AE9E92936DEB10055463B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				783AE9E72936DEB10055463B /* saver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		783AE9E62936DEB10055463B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		783AE9E42936DEB10055463B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78020EBA293AE15B0003EA75 /* field.cpp in Sources */,
+				78D2336F293BA3C10048AD9B /* morpher.cpp in Sources */,
+				78020EBF293B83680003EA75 /* canvas.mm in Sources */,
+				78020E7E2937EF0C0003EA75 /* saverView.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		783AE9EF2936DEB10055463B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		783AE9F02936DEB10055463B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		783AE9F22936DEB10055463B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9HRAN4D3T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = saverView;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = qq.saver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		783AE9F32936DEB10055463B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9HRAN4D3T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSPrincipalClass = saverView;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = qq.saver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		783AE9E22936DEB10055463B /* Build configuration list for PBXProject "saver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783AE9EF2936DEB10055463B /* Debug */,
+				783AE9F02936DEB10055463B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		783AE9F12936DEB10055463B /* Build configuration list for PBXNativeTarget "saver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783AE9F22936DEB10055463B /* Debug */,
+				783AE9F32936DEB10055463B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 783AE9DF2936DEB10055463B /* Project object */;
+}
