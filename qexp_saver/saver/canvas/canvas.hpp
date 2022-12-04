@@ -21,7 +21,7 @@ class Canvas
 public:
     Canvas(int width, int height, float xmin, float xmax);
     void clear(float r, float g, float b, float a);
-    void points(int n, float *x, float *y, float r, float g, float b, float a);
+    void points(int n, float *x, float *y, float r, float g, float b, float a, float size);
     CGImageRef image();
     void render();
 };

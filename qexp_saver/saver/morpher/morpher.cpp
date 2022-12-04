@@ -10,7 +10,7 @@
 
 #define rnd(x) ((rand()%1000000)/1000000.0*x)
 
-#define M 0.9
+#define M 0.95
 
 Morpher::Morpher(int n, float* pmin, float *pmax)
 {
@@ -36,13 +36,13 @@ float *Morpher::step(float dt)
     int i;
     for( i = 0; i < N; i++ )
     {
-        float v = V[i] + (rnd(2.0)-1)*VMax[i]*0.01;
-        if( v > VMax[i] )   v = VMax[i];
+        float v = V[i] + (rnd(2.0)-1)*VMax[i]*0.5;
+        if( v > VMax[i] )   v =  VMax[i];
         if( v < -VMax[i] )  v = -VMax[i];
         float p = Lead[i] + v*dt;
         if( p > PMax[i] || p < PMin[i] )
         {
-            v = -v;
+            v = -v/2;
             p = Lead[i] + v*dt;
         }
         V[i] = v;

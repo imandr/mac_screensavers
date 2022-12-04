@@ -17,7 +17,9 @@ public:
     int N;
     float *x;
     float *y;
-    
+    float *prev_x;
+    float *prev_y;
+
     QExp(int n);
     void step();
 };

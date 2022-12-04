@@ -43,17 +43,16 @@ void Canvas::clear(float r, float g, float b, float a)
     CGContextFillRect(Bitmap, Rect);
 }
 
-void Canvas::points(int n, float *x, float *y, float r, float g, float b, float a)
+void Canvas::points(int n, float *x, float *y, float r, float g, float b, float a, float size)
 {
     CGRect *rects = (CGRect *)calloc(n, sizeof(CGRect));
     CGRect *rect;
     int i;
     for( i = 0, rect = rects; i < n; i++, rect++ )
     {
-        float point_size = 1.0 + rnd(1.0)*rnd(1.0);
-        rect->size.width = rect->size.height = 1.0;
-        rect->origin.x = scale_x(x[i]);
-        rect->origin.y = scale_y(y[i]);
+        rect->size.width = rect->size.height = size;
+        rect->origin.x = scale_x(x[i])-size/2;
+        rect->origin.y = scale_y(y[i])-size/2;
     }
     CGContextSetRGBFillColor(Bitmap, r, g, b, a);
     CGContextFillRects(Bitmap, rects, n);
