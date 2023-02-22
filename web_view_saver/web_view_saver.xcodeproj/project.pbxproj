@@ -19,6 +19,7 @@
 		3184A718295F2CAC002BE616 /* web_view_saverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = web_view_saverView.m; sourceTree = "<group>"; };
 		3184A720295F2CF0002BE616 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
 		3184A722295F2CF7002BE616 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		31B0507D29A051DD00AB5251 /* web-view-saver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "web-view-saver-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		3184A715295F2CAC002BE616 /* web_view_saver */ = {
 			isa = PBXGroup;
 			children = (
+				31B0507D29A051DD00AB5251 /* web-view-saver-Info.plist */,
 				3184A716295F2CAC002BE616 /* web_view_saverView.h */,
 				3184A718295F2CAC002BE616 /* web_view_saverView.m */,
 			);
@@ -274,6 +276,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T9HRAN4D3T;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "web-view-saver-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = web_view_saverView;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
@@ -293,6 +298,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T9HRAN4D3T;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "web-view-saver-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = web_view_saverView;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
