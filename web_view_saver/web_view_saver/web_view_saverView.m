@@ -41,7 +41,7 @@
         URL = [NSURL URLWithString:url];
         NSURLRequest *request = [NSURLRequest requestWithURL: URL];
         WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
-        config.websiteDataStore = [WKWebsiteDataStore nonPersistentDataStore];
+        //config.websiteDataStore = [WKWebsiteDataStore nonPersistentDataStore];
         webView = [[WKWebView alloc] initWithFrame:frame configuration:config];
         webView.navigationDelegate = self;
         [webView loadRequest:request];
